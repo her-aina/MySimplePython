@@ -1,0 +1,59 @@
+print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+print "                                     TRUTH OR FALSE ???                                         "
+statement = "Network Security is under Industrial Electronic Department. The course requires six semester and student need to built their Final Year Project. Good luck Students !"
+
+print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+
+print "STATEMENT : ", statement
+
+print "\nAnswer : type [true] or [false] only."
+
+print "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+
+q1 = "Network Security is under Industrial Electronic Department"
+q2 = "The course requires three semester"
+q3 = "Bad luck"
+
+def quest1():
+	print q1,'?'
+	ans1 = raw_input("Answer : ")
+	if ans1 == 'true':
+		q1 in statement
+		print "\n[Correct]"
+	else :
+		print "\n[Wrong Answer]"
+
+def quest2():
+	print q2,'?'
+	ans2 = raw_input("Answer : ")
+	if ans2 == 'false':
+		q2 in statement
+		print "\n[Correct]"
+	else:
+		print "\n[Wrong Answer!]"
+
+def quest3():
+	print "Does the statement above wish students a ", q3," ?"
+	ans3 = raw_input("Answer : ")
+	if ans3 == 'false':
+		q3 in statement
+		print "\n[Correct]"
+	else:
+		print "\n[Wrong Answer]\n"
+
+quest1()
+
+print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+
+quest2()
+
+print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+
+quest3()
+
+re = raw_input('return to main menu? [y/n] : ')
+if re == 'y' :
+	execfile("strmenu")
+else :
+	print 'PYTHON QUIT'
+

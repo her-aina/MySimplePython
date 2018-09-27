@@ -1,0 +1,41 @@
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+print '                                COUNT A STATEMENT                                               '
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+
+count = dict()
+
+print '\nEnter a statement : '
+state = raw_input('\n')
+
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+choice = raw_input('\nEnter an alphabet you want to count base on statement above : ')
+
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+
+words = state.split()
+for word in words :
+        count[word] = count.get(word, 0) + 1
+
+x = len(words)
+a= state.count(choice)
+
+counted = raw_input("Include counted words? [y/n] : ")
+
+print "\nCounted words in a text : ",count
+
+if counted == 'y' :
+	print "Counted element in text : ", x
+	print "Counted alphabet of [",choice,"] : ",a
+
+elif counted == 'n' :
+	print "Counted alphabet of [",choice,"] : ", a
+
+else :
+	print 'ERROR !'
+
+print '\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+re = raw_input('return to main menu? [y/n] : ')
+if re == 'y' :
+	execfile("dictm")
+else :
+	print 'PYTHON QUIT'

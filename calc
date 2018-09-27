@@ -1,0 +1,66 @@
+print '~~~~~~~~~~~~~~~~~~~~'
+print '     CALCULATOR     '
+print '~~~~~~~~~~~~~~~~~~~~\n'
+
+def menu() :
+	print 'a) Addition'
+	print 'b) Subtraction'
+	print 'c) Multiplication'
+	print 'd) Division\n'
+
+menu()
+
+print '~~~~~~~~~~~~~~~~~~~~'
+u = raw_input('I Choose : ')
+print '~~~~~~~~~~~~~~~~~~~~\n'
+
+x = input('Enter first number : ')
+y = input('Enter second number : ')
+
+def add() :
+	add = x + y
+	return add
+
+def subt() :
+	sub = x - y
+	return sub
+
+def mult() :
+	mul = x * y
+	return mul
+
+def div() :
+	divide = x / y
+	divt = float(divide)
+	return divt
+
+if u == 'a' :
+	print '       ADDITION       '
+	print '~~~~~~~~~~~~~~~~~~~~\n'
+	print "Total of ",x," + ", y, " = ", add()
+
+elif u == 'b' :
+	print '     SUBTRACTION      '
+	print '~~~~~~~~~~~~~~~~~~~~~~\n'
+	print "Total of ",x," - ", y, " = ", subt()
+
+elif u == 'c' :
+	print '    MULTIPLICATION    '
+	print '~~~~~~~~~~~~~~~~~~~~~~\n'
+	print "Total of ",x," * ",y," = ", mult()
+
+elif u == 'd' :
+	print '       DIVISION       '
+	print '~~~~~~~~~~~~~~~~~~~~~~\n'
+	print "Total of ",x," / ",y," = ", div()
+
+elif u != 'a''b''c''d' :
+	while True:
+		break
+	print 'WRONG INPUT!'
+
+re = raw_input('return to main menu? [y/n] : ')
+if re == 'y' :
+	execfile("fmenu")
+else :
+	print 'PYTHON QUIT'

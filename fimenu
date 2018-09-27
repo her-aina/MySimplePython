@@ -1,0 +1,26 @@
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+print '                                          ITERATIONS                                            '
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+
+print 'Please choose : \n'
+print '1) READING A FILE'
+print '2) Printing 2 files !'
+print '3) Exit\n'
+
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+user = input('I Choose : ')
+ 
+if user == 1:
+	aa = open("a",'r')
+	print aa.read()
+	execfile("ret")
+
+elif user == 2:
+	execfile("x")
+	execfile("ret")
+
+elif user == 3 :
+	execfile("main")
+
+else :
+	print 'PYTHON QUIT'

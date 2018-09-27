@@ -1,0 +1,27 @@
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+print '                                2RINGGIT ONLINE STORE                                           '
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+carts = list()
+
+while True :
+	item = raw_input("I will buy : ")
+	done = raw_input("DONE ? [y/n] : ")
+	carts.append(item)
+	if done == 'y' :
+		break
+
+price = 2
+price = price * len(carts)
+
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+print 'This is in you carts : '
+print '\n\t',carts
+print '\n Price : RM ',price
+print '\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+
+re = raw_input('return to main menu? [y/n] : ')
+if re == 'y' :
+        execfile("limenu")
+else :
+        print 'PYTHON QUIT'
+

@@ -1,0 +1,24 @@
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+print '                        LIST MENU                                          '
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+
+print 'Please choose : \n'
+print '1) 2Ringgit Online Store !'
+print '2) Fun Words'
+print '3) Exit\n'
+
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+user = input('I Choose : ')
+
+print '\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+
+if user == 1 :
+	execfile("rm2awesome")
+
+elif user == 2 :
+	execfile("fun")
+
+elif user == 3 :
+	execfile("main")
+else :
+	print 'PYTHON QUIT'

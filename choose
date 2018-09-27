@@ -1,0 +1,23 @@
+print 'CHOOSE : '
+print 'a) ULTRAMAN'
+print 'b) Masked Rider'
+print 'c) Power Rangers'
+print 'd) Power puff girl'
+
+x = raw_input("choose : ")
+
+input = dict()
+input['a'] = 'ULTRAMAN'
+input['b'] = 'Masked Rider'
+input['c'] = 'Power Rangers'
+input['d'] = 'Power Puff Girl'
+
+op = input[x]
+print 'you choose : ',op
+
+re = raw_input('return to main menu? [y/n] : ')
+if re == 'y' :
+        execfile("main")
+else :
+        print 'PYTHON QUIT'
+

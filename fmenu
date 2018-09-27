@@ -1,0 +1,24 @@
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+print '                        FUNCTION MENU                                          '
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+
+print 'Please choose : \n'
+print '1) Simple Calculator..'
+print '2) Quote Of The Day !'
+print '3) Exit\n'
+
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+user = input('I Choose : ')
+
+print '\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+
+if user == 1 :
+	execfile("calc")
+
+elif user == 2 :
+	execfile("qotd")
+
+elif user == 3:
+	execfile("main")
+else :
+	print 'error'

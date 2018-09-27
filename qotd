@@ -1,0 +1,114 @@
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+print '                   QUOTE OF THE DAY                 '
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+
+def color():
+	print ' 1. Black     6.  Blue'
+	print ' 2. Red       7.  Yellow' 
+	print ' 3. White     8.  Purple'
+	print ' 4. Brown     9.  Green'
+	print ' 5. Orange    10. Pink'
+	
+
+month = input("Enter Your Birth Month (in number) : ")
+print("Enter Your Shirt Color (wore now) : ")
+color()
+cloth = input("Choice : ")
+gender = raw_input("Enter Your Gender [female/male] : ")
+
+print '\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+
+def month12() :
+	if month == 1 :
+		return 'loves children'
+			
+	elif month == 2 :
+		return 'loves freedom'
+	
+	elif month == 3 :
+		return 'secretive'
+	
+	elif month == 4 :
+		return 'friendly'
+	
+	elif month == 5 :
+		return 'loves traveling'
+		
+	elif month == 6 :
+		return 'loves to joke'
+		
+	elif month == 7 :
+		return 'forgiving but never forgets'
+		
+	elif month == 8 :
+		return 'observant'
+		
+	elif month == 9 :
+		return 'likes to criticize'
+		
+	elif month == 10 :
+		return "doesn't care what others think"
+		
+	elif month == 11 :
+		return 'knows how to dig others secret'
+		
+	elif month == 12 :
+		return 'fun to be with'
+				
+	else :
+		return 'bye'
+
+def clothes() :
+	if cloth == 1 :
+		return 'sophisticated'
+			
+	elif cloth == 2 :
+		return 'power'
+			
+	elif cloth == 3 :
+		return 'sincerity'
+		
+	elif cloth == 4 :
+		return 'rugged'
+			
+	elif cloth == 5 :
+		return 'healer'
+			
+	elif cloth == 6 :
+		return 'competence'
+			
+	elif cloth == 7 :
+		return 'happiness'
+		
+	elif cloth == 8 :
+		return 'authority'
+		
+	elif cloth == 9 :
+		return 'envy'
+		
+	elif cloth == 10 :
+		return 'feminine'
+		
+	else :
+		return 'bye'
+
+def gen() :
+	if gender == 'female' :
+		return 'seek trusted and respected relationship'
+
+	elif gender == 'male' :
+		return 'love through sacrifice'
+
+	else :
+		return 'no and bye'
+
+print "You are a person that ",month12(),", and symbolic to ",clothes(),", and also ",gen()
+
+print '\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+
+re = raw_input('return to main menu? [y/n] : ')
+if re == 'y' :
+        execfile("fmenu")
+else :
+        print 'PYTHON QUIT'
+

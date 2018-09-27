@@ -1,0 +1,64 @@
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+print '                             MANIPULATE STATEMENT                                               '
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+print '\nPlease correct the errors in this statement below.\n'
+stat = "Mister Irfan loved all of hisss childerents"
+print 'statement  : ',stat
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+
+errors = input("How many errors in the sentences? : ")
+
+def states():
+	change = raw_input("highlighted words : ")
+	to = raw_input("change to? : ")
+	x1 = stat.replace(change,to)
+	print x1
+	while True:
+                stop = raw_input("Done? [y/n] : ")
+                if stop  == 'y' :
+			break              
+		else :
+			change = raw_input("highlighted words : ")
+                        to = raw_input("change to? : ")
+                        x2 = x1.replace(change,to)
+                        print x2
+			while True:
+		                stop = raw_input("Done? [y/n] : ")
+        		        if stop  == 'y' :
+                        		break                                     
+                		else :
+                        		change = raw_input("highlighted words : ")
+                        		to = raw_input("change to? : ")
+                       			x3 = x2.replace(change,to)
+                        		print x3
+					while True:
+				                stop = raw_input("Done? [y/n] : ")
+        				        if stop  == 'y' :
+          						break
+						else :
+                				        change = raw_input("highlighted words : ")
+                				        to = raw_input("change to? : ")
+          					        x4 = x3.replace(change,to)
+                					print x4
+
+						break
+					break
+				break
+			break		
+if errors == 4 :
+	states()
+
+
+else :
+        to = input("Wrong answer [2 + 2 = ?] : ")
+	if to == 4 :
+		states()
+
+	else :
+		print 'done'
+
+re = raw_input('return to main menu? [y/n] : ')
+if re == 'y' :
+	execfile("strmenu")
+else :
+	print 'PYTHON QUIT'

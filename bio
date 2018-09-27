@@ -1,0 +1,20 @@
+bio = dict()
+
+name = 'Name '
+usname = raw_input('Name : ')
+age = 'Age '
+usage = raw_input('Age : ')
+stat = 'Status'
+usstat = raw_input("Status : ")
+
+bio[name] = usname
+bio[age] = usage
+bio[stat] = usstat
+
+print bio
+
+re = raw_input('return to main menu? [y/n] : ')
+if re == 'y' :
+	execfile("dictm")
+else :
+	print 'PYTHON QUIT'

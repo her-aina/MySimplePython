@@ -1,0 +1,46 @@
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+print '                                   MAIN MENU                                                    '
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+print '1) Function'
+print '2) Iteration'
+print '3) Strings'
+print '4) Files'
+print '5) Lists'
+print '6) Dictionary'
+print '7) list in dict()'
+print '8) choose character'
+print '9) Exit'
+
+user = input("\nCHOICE : ")
+
+if user == 1:
+	execfile("fmenu")
+
+elif user == 2:
+	execfile("lmenu")
+
+elif user == 3:
+	execfile("strmenu")
+
+elif user == 4 :
+	execfile("fimenu")
+
+elif user == 5 :
+	execfile("limenu")
+
+elif user == 6 :
+	execfile("dictm")
+
+elif user == 7:
+	execfile("listd")
+
+elif user == 8 :
+	execfile("choose")
+	
+elif user == 9:
+	print "QUITTING"
+	print " . . .  .. . . . . . . . . . . . . . . . . . . ."
+else :
+	print 'error'
+
+print 'PYTHON QUIT'

@@ -1,0 +1,49 @@
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+print '             SENDING AN EMAIL          '
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+
+print 'You want to send an email. To whom?\n'
+
+print 'List of friends : \n'
+
+print '1) Alimi    4) Zila'
+print '2) Iqa      5) Joe'
+print '3) Ammar    6) Siti'
+
+listed = dict()
+listed[1] = 'Alimi'
+listed[2] = 'Iqa'
+listed[3] = 'Ammar'
+listed[4] = 'Zila'
+listed[5] = 'Joe'
+listed[6] = 'Siti'
+
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~'
+user = input('Sent to : ')
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~'
+
+print '\nSending . . .\n'
+
+numb = 0
+output = listed[user]
+
+for list in ['Alimi','Iqa','Ammar','Zila','Joe','Siti']:
+	numb = numb + 1
+	if list == output :
+		firstly = "send"
+
+	elif list != output :
+		firstly = "not send"
+
+	print numb, list," = ", firstly
+
+print '\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+
+print 'Email have been sent to : ',output
+
+re = raw_input('return to main menu? [y/n] : ')
+if re == 'y' :
+        execfile("lmenu")
+else :
+        print 'PYTHON QUIT'
+

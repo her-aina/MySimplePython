@@ -1,0 +1,7 @@
+user = raw_input("return to menu? [y/n] : ")
+
+if user == 'y':
+        execfile("fimenu")
+
+else :
+        print 'PYTHON QUIT'

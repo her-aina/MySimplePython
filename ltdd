@@ -1,0 +1,25 @@
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+print '                               LIST-TO-DO TODAY                                                 '
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+
+listed = list()
+
+while True :
+	ltd = raw_input("\n\tWhat to do today? : ")
+	listed.append(ltd)
+	end = raw_input("\nDONE ? [y/n] : ")	
+	if end == 'y' :
+		print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+		print "\n\t",listed
+		break
+
+count = len(listed)
+
+print '\nYou has',count,'work to do today !'
+print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+
+re = raw_input('return to main menu? [y/n] : ')
+if re == 'y' :
+        execfile("lmenu")
+else :
+        print 'PYTHON QUIT'
